@@ -1,0 +1,83 @@
+/* Reset & Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header header'
+    'main   aside'
+    'footer footer';
+  color: #334155;
+}
+
+/* Header & Nested Nav */
+header {
+  grid-area: header;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.header-top {
+  padding: 2rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav {
+  background-color: #1e293b;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #34d399;
+}
+
+/* Main Content Area */
+main {
+  grid-area: main;
+  background-color: #f1f5f9;
+  padding: 2rem;
+  border-right: 1px solid #e2e8f0;
+}
+
+/* Aside Area */
+aside {
+  grid-area: aside;
+  background-color: #ffffff;
+  padding: 2rem;
+  font-style: italic;
+}
+
+/* Footer Area */
+footer {
+  grid-area: footer;
+  background-color: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 4px solid #10b981;
+}
