@@ -1,0 +1,192 @@
+/* Color Palette */
+:root {
+  --header-bg: #000c1d;
+  --nav-bg: #152128;
+  --nav-text: #45bf95;
+  --main-bg: #f0f3f5;
+  --footer-bg: #000c1d;
+  --footer-accent: #00a082;
+  --card-header: #000c1d;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg);
+}
+
+header {
+  background-color: var(--header-bg);
+  color: var(--white);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  background-color: var(--nav-bg);
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--footer-accent);
+}
+
+nav a {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+}
+
+nav a:hover {
+  color: var(--white);
+  background-color: #2c3e50;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  background-color: var(--card-header);
+  color: white;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.17em;
+}
+
+/* Flex layout for About Me top section */
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.location-header {
+  text-align: center;
+}
+
+.location-header hr {
+  width: 80%;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Alignment for the flag and city description */
+.location-info {
+  padding: 1.5rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.location-info p {
+  margin: 0;
+}
+
+.flag-box {
+  text-align: center;
+  flex: 0 0 150px;
+}
+
+.caption {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Resources card */
+.resources-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.resources-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.resources-container ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem;
+  border-top: 5px solid var(--footer-accent);
+  margin-top: 40px;
+}
+
+#lastModified {
+  color: #ffff00;
+  margin-top: 10px;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .card-content,
+  .location-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .flag-box {
+    flex: 0 0 120px;
+  }
+}
+
+@media (max-width: 520px) {
+  /* Stack navigation links vertically */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+  }
+}

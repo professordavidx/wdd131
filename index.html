@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 – Dynamic Web Fundamentals – David Gomez</title>
+    <meta
+      name="description"
+      content="WDD 131 – Dynamic Web Fundamentals - David Gomez - A profile page showcasing web development resources and personal background."
+    />
+    <meta name="author" content="David Gomez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+      <nav>
+        <a href="http://www.linkedin.com/in/davidgomezinstructor">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
+          >Scripture</a
+        >
+        <a href="#">Final Project</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>David Gomez</h1>
+      <div class="grid-container">
+        <section class="card">
+          <h2>About Me</h2>
+          <div class="card-content">
+            <p>
+              My name is David Gomez. I am from Cartagena, Colombia. I enjoy
+              learning web development because it allows me to create
+              interactive and engaging user experiences. Building things from
+              scratch and solving complex problems with code is my passion.
+            </p>
+            <img
+              src="images/profile.webp"
+              alt="Profile Picture of David Gomez"
+              width="200"
+            />
+          </div>
+
+          <div class="location-header">
+            <h3>Cartagena, Colombia</h3>
+            <hr />
+          </div>
+
+          <div class="location-info">
+            <div class="flag-box">
+              <img
+                src="images/flag.webp"
+                alt="Official Flag of Colombia"
+                width="150"
+              />
+              <p class="caption">Official Flag of Colombia</p>
+            </div>
+            <p>
+              Cartagena de Indias is a coastal gem known for its impeccably
+              preserved colonial history. Founded in 1533, the 'Walled City' is
+              a UNESCO World Heritage site featuring 11km of stone
+              fortifications designed to protect the city from pirate attacks.
+              It is home to the Castillo San Felipe de Barajas—the most
+              formidable fortress ever built by the Spanish in the Americas.
+              Today, it is a vibrant center of Colombian culture, famous for its
+              colorful bougainvillea-draped balconies, emerald trade, and
+              tropical Caribbean charm.
+            </p>
+          </div>
+        </section>
+
+        <section class="card resources-card">
+          <h2>Web Dev Resources</h2>
+          <div class="resources-container">
+            <ul>
+              <li>
+                <a href="https://www.w3schools.com/">W3Schools Tutorials</a>
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+              </li>
+              <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+              <li>
+                <a href="https://www.frontendmentor.io/">Frontend Mentor</a>
+              </li>
+              <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> David Gomez - Cartagena, Colombia
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
