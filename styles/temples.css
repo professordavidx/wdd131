@@ -2,7 +2,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  color: #333;
+  color: #333333;
   line-height: 1.6;
 }
 
@@ -14,7 +14,7 @@ h2 {
 
 header {
   background-color: #152128;
-  color: white;
+  color: #ffffff;
   padding: 1rem;
 }
 
@@ -44,7 +44,7 @@ nav {
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   text-align: center;
   transition: background 0.3s;
@@ -59,7 +59,7 @@ nav {
   font-size: 2rem;
   background: none;
   border: none;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   align-self: flex-end;
   position: absolute;
@@ -90,7 +90,7 @@ main {
 figure {
   max-width: max-content;
   margin: 0 auto;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -110,7 +110,7 @@ figcaption {
 
 footer {
   background-color: #152128;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 2rem;
   margin-top: 2rem;
