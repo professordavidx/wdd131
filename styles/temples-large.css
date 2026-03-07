@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+  #menu {
+    display: none; /* Hide hamburger */
+  }
+
+  .navigation {
+    display: flex !important; /* Force show flex menu */
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

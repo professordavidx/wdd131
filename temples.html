@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A small collection of photos of temples around the world."
+    />
+    <meta name="author" content="David Gomez" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+
+    <script src="scripts/temples.js" defer></script>
+
+    <title>Temple Album | Responsive Gallery</title>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <nav>
+        <button id="menu" title="Toggle Menu"></button>
+        <ul class="navigation">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Home</h2>
+      <div class="gallery">
+        <figure>
+          <img
+            src="images/arequipa_peru.webp"
+            alt="Arequipa, Peru Temple"
+            width="310"
+            height="194"
+            fetchpriority="high"
+          />
+          <figcaption>Arequipa, Peru</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/barranquilla_colombia.webp"
+            alt="Barranquilla, Colombia Temple"
+            width="310"
+            height="194"
+          />
+          <figcaption>Barranquilla, Colombia</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/bogota_colombia.webp"
+            alt="Bogota, Colombia Temple"
+            loading="lazy"
+            width="310"
+            height="194"
+          />
+          <figcaption>Bogota, Colombia</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/campinas_brazil.webp"
+            alt="Campinas, Brazil Temple"
+            loading="lazy"
+            width="310"
+            height="194"
+          />
+          <figcaption>Campinas, Brazil</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/fortaleza_brazil.webp"
+            alt="Fortaleza, Brazil Temple"
+            loading="lazy"
+            width="310"
+            height="194"
+          />
+          <figcaption>Fortaleza, Brazil</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/lima_peru.webp"
+            alt="Lima, Peru Temple"
+            loading="lazy"
+            width="310"
+            height="194"
+          />
+          <figcaption>Lima, Peru</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/los_olivos_peru.webp"
+            alt="Los Olivos, Peru Temple"
+            loading="lazy"
+            width="310"
+            height="194"
+          />
+          <figcaption>Los Olivos, Peru</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/rio_de_janeiro_brazil.webp"
+            alt="Rio de Janeiro, Brazil Temple"
+            loading="lazy"
+            width="310"
+            height="194"
+          />
+          <figcaption>Rio de Janeiro, Brazil</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/trujillo_peru.webp"
+            alt="Trujillo, Peru Temple"
+            loading="lazy"
+            width="310"
+            height="194"
+          />
+          <figcaption>Trujillo, Peru</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> David Gomez - Cartagena, Colombia
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

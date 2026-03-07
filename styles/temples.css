@@ -1,0 +1,124 @@
+/* Mobile-First Base Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: #152128;
+  color: white;
+  padding: 1rem;
+}
+
+/* Flex Navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-right: 10px;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Hidden by default on mobile */
+  flex-direction: column;
+}
+
+.navigation.show {
+  display: flex;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.navigation li a:hover {
+  color: #00a082;
+}
+
+/* Hamburger Button */
+#menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+  position: absolute;
+  top: 2rem;
+  right: 0.1rem;
+}
+
+#menu::before {
+  content: '☰';
+}
+#menu.open::before {
+  content: '✖';
+}
+
+/* Main Content & Grid */
+main {
+  max-width: 985px; /* Limited width */
+  margin: 0 auto; /* Centered horizontally */
+  padding: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 1.5rem;
+}
+
+figure {
+  max-width: max-content;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 310 / 194;
+  display: block;
+}
+
+figcaption {
+  padding: 0.8rem;
+  background: #f9f9f9;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #152128;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 5px solid #00a082;
+}
+
+#lastModified {
+  color: #ffff00;
+  margin-top: 10px;
+  display: block;
+}
