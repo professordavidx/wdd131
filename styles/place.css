@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header - Yellow */
+header {
+  background-color: #fcd116;
+  color: #003893;
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* The Blue Accent Bar under Header */
+.accent-bar {
+  background-color: #003893;
+  height: 15px;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* The Yellow Accent Bar under the hero image */
+.picture-bar {
+  background-color: #fcd116;
+  height: 7px;
+  width: 100%;
+}
+
+/* Sections */
+section {
+  padding: 0;
+}
+
+.data,
+.weather {
+  margin-bottom: 2rem;
+}
+
+/* "Data" and "Weather" Headings */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Label/Value Alignment */
+.stats p {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.stats p strong {
+  margin-right: 5px;
+}
+
+.stats p span:first-child {
+  font-weight: bold;
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* Weather Icon Styling */
+.weather-icon-container img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #af0e21;
+  color: #fff;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}

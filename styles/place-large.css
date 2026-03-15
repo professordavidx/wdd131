@@ -1,0 +1,81 @@
+@media (min-width: 1000px) {
+  main {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Data Card */
+  .data {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ffffffd9;
+    width: 260px;
+    text-align: left;
+    box-shadow: 0 0 10px #00000033;
+  }
+
+  /* Weather Card */
+  .weather {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffffd9;
+    width: 260px;
+    text-align: left;
+    box-shadow: 0 0 10px #00000033;
+  }
+
+  /* Heading Bars */
+  .data h2,
+  .weather h2 {
+    background-color: #003893;
+    color: #fcd116;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .weather h2::after {
+    content: ' ⛅';
+  }
+
+  /* Organized Text Alignment */
+  .stats,
+  .weather-stats {
+    padding: 10px 15px;
+  }
+
+  .stats p,
+  .weather-stats p {
+    display: flex;
+    justify-content: left;
+    margin: 8px 0;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #0000000d;
+  }
+
+  .stats p strong,
+  .weather-stats p strong {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+  }
+
+  /* Ensure image fills the space properly */
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .weather-icon-container,
+  .picture-bar {
+    display: none;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+}

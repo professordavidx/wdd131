@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Colombia - Country Profile</title>
+    <meta name="description" content="A page about Colombia." />
+    <meta name="author" content="David Gomez" />
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Colombia</h1>
+    </header>
+
+    <div class="accent-bar"></div>
+
+    <main>
+      <section class="hero">
+        <picture>
+          <source srcset="images/hero-large.webp" media="(min-width: 600px)" />
+          <img
+            src="images/hero-small.webp"
+            alt="Beautiful landscape of Cartagena, Colombia"
+          />
+        </picture>
+      </section>
+      <div class="picture-bar"></div>
+
+      <section class="data">
+        <h2>Data</h2>
+        <div class="stats">
+          <p><strong>Area:</strong> 1,141,748 sq km</p>
+          <p><strong>Population:</strong> 52,000,000</p>
+          <p><strong>Capital:</strong> Bogotá</p>
+          <p><strong>Languages:</strong> Spanish</p>
+          <p><strong>Currency:</strong> Colombian Peso (COP)</p>
+          <p><strong>Time Zone:</strong> UTC-5</p>
+          <p><strong>Calling Code:</strong> +57</p>
+          <p><strong>Internet TLD:</strong> .co</p>
+        </div>
+      </section>
+
+      <section class="weather">
+        <h2>Weather</h2>
+        <div class="weather-icon-container">
+          <img
+            src="images/weather-icon.svg"
+            alt="Weather Icon"
+            class="mobile-icon"
+          />
+        </div>
+        <div class="weather-stats">
+          <p><strong>Temperature:</strong> <span id="temp">28</span> °C</p>
+          <p><strong>Conditions:</strong> Partially Cloudy</p>
+          <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+          <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> David Gomez - Cartagena, Colombia
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
