@@ -1,5 +1,10 @@
+:root {
+  /* Typography Scale */
+  --body-font: Arial, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--body-font);
   margin: 0;
   padding: 0;
   text-align: center;
