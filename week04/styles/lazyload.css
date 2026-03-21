@@ -1,0 +1,44 @@
+/* Center everything */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+/* Main container */
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Images in a single centered column */
+img {
+  display: block;
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+
+  /* Start hidden */
+  opacity: 0;
+
+  /* Animation */
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Fade-from-black animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: brightness(0);
+  }
+  to {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  padding: 10px;
+}
