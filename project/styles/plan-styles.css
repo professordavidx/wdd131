@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 20px;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-left: 5px solid #1f6fb2;
+}
+
+/* Color Samples */
+.color-sample {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.swatch {
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #000;
+}
+
+.highlight {
+  color: #634997;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+/* Wireframes */
+.wireframe {
+  border: 2px dashed #999;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Common Box Styling */
+.box {
+  border: 1px solid #333;
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Mobile Wireframe */
+.mobile {
+  max-width: 320px;
+}
+
+.mobile .header {
+  height: 60px;
+}
+.mobile .nav {
+  height: 40px;
+}
+.mobile .main {
+  height: 120px;
+}
+.mobile .image {
+  height: 100px;
+}
+.mobile .footer {
+  height: 50px;
+}
+
+/* Desktop Wireframe */
+.desktop {
+  max-width: 800px;
+}
+
+.desktop .header {
+  height: 80px;
+}
+.desktop .nav {
+  height: 50px;
+}
+.desktop .footer {
+  height: 60px;
+}
+
+/* Layout for desktop main + sidebar */
+.content-row {
+  display: flex;
+  gap: 10px;
+}
+
+.desktop .main {
+  flex: 3;
+  height: 200px;
+}
+
+.desktop .sidebar {
+  flex: 1;
+  height: 200px;
+}
