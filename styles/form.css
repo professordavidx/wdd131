@@ -1,0 +1,194 @@
+/* form.css - uses the same color scheme and typography as base.css */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f3f5;
+}
+
+header {
+  background-color: #000c1d;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+#course-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #152128;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #00a082;
+}
+
+nav a {
+  color: #45bf95;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: #2c3e50;
+}
+
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/* Form container styling */
+form {
+  background-color: #f9fafb; /* subtle off-white to separate from page */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Label styling */
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #152128;
+}
+
+/* Input and select fields */
+input[type='text'],
+input[type='date'],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #b0b0b0;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  background-color: #ffffff;
+}
+
+input[type='text']:focus,
+input[type='date']:focus,
+select:focus,
+textarea:focus {
+  border-color: #00a082;
+  box-shadow: 0 0 5px rgba(0, 160, 130, 0.4);
+  outline: none;
+}
+
+/* Fieldset styling */
+fieldset {
+  border: 1px solid #b0b0b0;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  background-color: #f5f7f9;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+  color: #152128;
+}
+
+/* Checkbox and radio spacing */
+input[type='checkbox'],
+input[type='radio'] {
+  margin-right: 0.5rem;
+  accent-color: #00a082; /* modern colored check/radio */
+}
+
+/* Submit button */
+input[type='submit'] {
+  width: fit-content;
+  padding: 0.75rem 1.5rem;
+  background-color: #00614f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+input[type='submit']:hover {
+  background-color: #014f41;
+  transform: translateY(-1px);
+}
+
+/* Textarea placeholder color */
+textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Highlight required fields */
+input:required,
+select:required,
+textarea:required {
+  border-left: 4px solid #00a082;
+  padding-left: 0.5rem;
+}
+
+footer {
+  background-color: #000c1d;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  border-top: 5px solid #00a082;
+  margin-top: 40px;
+}
+
+#lastModified {
+  color: #ffff00;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
