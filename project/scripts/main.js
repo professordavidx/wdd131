@@ -1,3 +1,4 @@
+// Photography styles data
 const styles = [
   {
     name: 'Portrait',
@@ -19,6 +20,7 @@ const styles = [
   },
 ];
 
+// Generate and display style cards
 function displayStyles() {
   const container = document.getElementById('styles-container');
   if (!container) return;
@@ -42,6 +44,7 @@ function displayStyles() {
     .join('');
 }
 
+// Add a style to favorites and update storage
 function saveFavorite(styleName) {
   let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
@@ -55,6 +58,7 @@ function saveFavorite(styleName) {
   updateFavoriteCount();
 }
 
+// Load favorites from localStorage and display them
 function loadFavorites() {
   const list = document.getElementById('favorites');
   if (!list) return;
@@ -64,6 +68,7 @@ function loadFavorites() {
   list.innerHTML = favorites.map((f) => `<li>${f}</li>`).join('');
 }
 
+// Update the visible count of saved favorites
 function updateFavoriteCount() {
   const count = JSON.parse(localStorage.getItem('favorites')) || [];
   const counter = document.getElementById('favorite-count');
@@ -73,8 +78,8 @@ function updateFavoriteCount() {
   }
 }
 
+// Clear all saved favorites
 const clearBtn = document.getElementById('clear-btn');
-
 if (clearBtn) {
   clearBtn.addEventListener('click', () => {
     localStorage.removeItem('favorites');
@@ -83,15 +88,16 @@ if (clearBtn) {
   });
 }
 
+// Initialize page after DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   displayStyles();
   loadFavorites();
   updateFavoriteCount();
-  setActiveNav();
+  setActiveNav(); // Highlight current page in nav
 });
 
+// Form submission handling
 const form = document.getElementById('contact-form');
-
 if (form) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -108,6 +114,7 @@ if (form) {
   });
 }
 
+// Set "active" class on nav link corresponding to current page
 function setActiveNav() {
   const links = document.querySelectorAll('nav a');
   const currentPage = window.location.pathname.split('/').pop();
